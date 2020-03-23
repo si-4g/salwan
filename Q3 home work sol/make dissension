@@ -1,0 +1,27 @@
+int n1 ,n2 ;
+float res ;
+cout << " enter number one and number two "<<endl;
+cin>>n1>>n2;
+char opt ;
+cout<<" choose an opreation "<<endl;
+cout<<" +) for addition(a) "<<endl;
+cout<<" -) for subtraction(b) "<<endl;
+cout<<" *) for multiplication(c) "<<endl;
+cout<<" /) for division(d) "<<endl;
+cin>>opt ;
+switch (opt){
+case '+':
+res = n1+n2 ;cout <<n1<<opt <<n2 <<" = "<<res<<endl; break ;
+case '-':
+res = n1 - n2 ;cout <<n1<<opt <<n2 <<" = "<<res<<endl; break ;
+case '*' :
+res = n1 * n2 ;cout <<n1<<opt <<n2 <<" = "<<res<<endl; break ;
+case '/':
+if (n2!=0){
+res = n1 / n2 ;
+cout <<n1<<opt <<n2 <<" = "<<res<<endl; break;}
+else
+cout<<" error can not division by zero "<<endl;break ;
+default :
+res = 0;
+}
